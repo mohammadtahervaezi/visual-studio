@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Application.Contracts/1.0.0": {
+        "dependencies": {
+          "Academy-Domain": "1.0.0"
+        },
+        "runtime": {
+          "Application.Contracts.dll": {}
+        }
+      },
+      "Academy-Domain/1.0.0": {
+        "runtime": {
+          "Academy-Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Application.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Academy-Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
