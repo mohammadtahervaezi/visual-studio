@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>Academy_RestApi</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Academy.Config\Academy.Config.csproj" />
+    <ProjectReference Include="..\Applicatio.Contracts\Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

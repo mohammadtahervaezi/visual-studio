@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="mapster" Version="4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Academy-Domain\Academy-Domain.csproj" />
+    <ProjectReference Include="..\Applicatio.Contracts\Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
