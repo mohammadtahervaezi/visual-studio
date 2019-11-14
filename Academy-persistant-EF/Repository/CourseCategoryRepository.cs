@@ -8,12 +8,34 @@ namespace Academy_persistant_EF.Repository
 {
     public class CourseCategoryRepository:ICourseCategoryRepository
     {
+        private  AcademyContext _context;
+
+        public CourseCategoryRepository(AcademyContext context)
+        {
+            _context = context;
+        }
         public List<CourseCategory> GetAll()
         {
-            using (var context=new AcademyContext())
-            {
-                return context.CourseCategories.ToList().Where(x => !x.parentId.HasValue).ToList();
-            }
+            
+                return _context.CourseCategories.ToList().Where(x => !x.parentId.HasValue).ToList();
+            
         }
+
+        public CourseCategory getbyid(long id)
+        {
+            
+                return _context.CourseCategories.Find(id);
+            
+        }
+
+        public void remove(CourseCategory entity)
+        {
+           
+                _context.CourseCategories.Remove(entity);
+                _context.SaveChanges();
+            
+        }
+
+        
     }
 }

@@ -26,5 +26,12 @@ namespace Academy.Application
             return p;
             
         }
+
+        public void Delete( long id)
+        {
+          var entity=  _Repository.getbyid(id);
+          if(entity!=null)
+          _Repository.remove(entity);
+        }
     }
 }

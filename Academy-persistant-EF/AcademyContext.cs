@@ -7,9 +7,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Academy_persistant_EF
 {
-  public  class AcademyContext:DbContext
+    public class AcademyContext : DbContext
     {
-        public  DbSet<CourseCategory> CourseCategories { get; set; }
+        public DbSet<CourseCategory> CourseCategories { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
@@ -22,5 +23,6 @@ namespace Academy_persistant_EF
             modelBuilder.ApplyConfiguration(new CourseCategoryMappings());
             base.OnModelCreating(modelBuilder);
         }
+
     }
 }

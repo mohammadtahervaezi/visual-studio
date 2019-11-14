@@ -4,7 +4,6 @@ namespace Academy_Domain
 {
     public class CourseCategory
     {
-       
 
         public long  Id{ get; set; }
         public string Title { get; set; }

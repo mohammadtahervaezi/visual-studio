@@ -6,5 +6,6 @@ namespace Applicatio.Contracts
     public interface ICourseCategoryServices
     {
         List<CourseCategoryDto> GetAll();
+        void Delete( long id);
     }
 }
